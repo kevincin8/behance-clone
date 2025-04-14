@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '640px',
+                    md: '876px', // override corretto
+                    lg: '1074px',
+                    xl: '1280px',
+                    '2xl': '1336px',
+                },
+            }
+
+        }
+    </script>
+    <title>Tailwind Custom Breakpoint</title>
+</head>
+
+<body>
+    <!-- !contenitore navabar -->
+    <div>
+        <nav class="flex items-center justify-between px-4 py-5 lg:pt-[8px]">
+            <div class="flex items-center gap-3">
+                <!-- !icona menu hamburger  -->
+                <img id="menu-btn" class="h-[20px] lg:hidden" src="./icons/menu-icon.png" alt="">
+                <!-- !icona behace  -->
+                <img class="h-[19px]" src="./images/img-behance.svg" alt="">
+
+                <!-- !link navbar -->
+                <ul id="nav-menu" class="hidden lg:flex items-center gap-4">
+                    <li>
+                        <a class="font-bold text-[17px]" href="">Esplora</a>
+                    </li>
+                    <li>
+                        <a class="font-bold text-[17px]" href="">Trova lavori</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a class="font-bold text-[17px]" href="">Assumi freelance</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- !icona ricerca navbar -->
+            <img class="h-[20px] lg:hidden" src="./icons/search-icon.png" alt="">
+
+            <!-- !contenitore bottoni navabar -->
+            <div class="hidden lg:flex items-center gap-2">
+                <a href="" class="text-white bg-blue-700 font-bold lg:block text-center px-5 py-2 border-gray-300 border-[1px] rounded-[30px] gap-3 hover:bg-[#F0F0F0] min-w-[120px]">Aggiorna per Pro</a>
+                <a href="" class="text-blue-700 font-bold lg:block text-center px-5 py-2 border-gray-300 border-[1px] rounded-[30px] gap-3 hover:bg-[#F0F0F0] min-w-[86px]">
+                     Accedi
+                </a>
+            </div>
+        </nav>
+
+        <!-- !contenitore barra di ricerca -->
+        <div class="px-2 lg:flex gap-3 flex-row-reverse justify-center items-center">
+            <!-- ! bottone barra di ricerca destro -->
+            <div
+                class="hidden px-[28px] py-[12px] border-gray-300 border-[1px] rounded-[30px] lg:flex items-center justify-center gap-3 hover:bg-[#F0F0F0] min-w-[138px]">
+                <span class="font-bold">Suggerita</span>
+            </div>
+
+            <!-- ! barra di ricerca -->
+            <div
+                class="flex-1 px-5 py-[10px] border-gray-300 border-[1px] rounded-[30px] flex items-center gap-3 bg-[#F9F9F9] mb-4 lg:mb-0">
+                <img src="./icons/search-icon.png" alt="" class="h-[18px]">
+                <input type="text" class="w-full text-[20px] font-bold outline-none bg-transparent "
+                    value="Cerca il mondo cre...">
+            </div>
+
+
+            <!-- ! bottone barra di ricerca sinistro -->
+            <div
+                class="px-[28px] py-[12px] border-gray-300 border-[1px] rounded-[30px] flex items-center justify-center gap-3 hover:bg-[#F0F0F0] min-w-[126px]">
+                <img src="./icons/filter-icon.png" alt="" class="h-[18px]">
+                <span class="font-bold">Filtro</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ! sezione card -->
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 px-[24px] mt-[20px] gap-5">
+        <!-- !card post -->
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-1.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-2.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-3.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-4.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <!-- !card post -->
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-1.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-2.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-3.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-4.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+    
+        <!-- !card post -->
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-1.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-2.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-3.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+
+        <div class="max-w-[404px] mx-auto sm:mx-0 sm:max-w-none">
+            <img src="./images/card-4.webp" alt="" class="w-full">
+            <h2 class="text-[15px] font-bold">Leger - Trail of Love</h2>
+            <p class="text-[12px]">Più proprietari</p>
+        </div>
+    
+    </main>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn")
+        const navMenu = document.getElementById("nav-menu")
+        console.log( "sono nav-menu",navMenu );
+        menuBtn.addEventListener("click", () => {
+            console.log("dio porco");
+        })
+
+        console.log("sono menu btn", menuBtn);
+    </script>
+</body>
+
+</html>
